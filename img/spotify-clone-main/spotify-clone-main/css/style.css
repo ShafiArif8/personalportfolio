@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "noto sans";
+    background-color: black;
+    color: white;
+}
+
+.main {
+    display: flex;
+}
+
+.aside-left {
+    width: 250px;
+    background-color: rgb(32, 32, 32);
+    text-align: left;
+    height: 100vh;
+    padding-left: 20px;
+    
+}
+
+.aside-left h1 {
+    font-size: 30px;
+    margin: 20px 10px;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+ul li {
+    margin: 20px 10px;
+}
+
+.aside-right {
+    flex: 1;
+    padding: 20px;
+
+
+    position: relative;
+}
+
+.top {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    background-color: rgb(8, 146, 8);
+}
+
+.welcome {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.playcon {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+}
+
+.music {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    padding: 5px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+audio {
+    margin: auto;
+    filter: invert(1);
+}
+
+.name {
+    background-color: rgb(48, 47, 47);
+    margin: 10px 0;
+    padding-right: 0;
+    display: flex;
+    padding: 10px;
+    border-radius: 12px;
+    justify-content: space-between;
+
+    width: 85%;
+}
+
+.symbol {
+    background-color: rgb(8, 146, 8);
+    color: black;
+    padding: 6px;
+    border-radius: 100%;
+}
+
+.mainaudio {
+
+    
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    padding: 20px;
+    
+
+
+}
+.mainaudio audio{
+    padding: 0;
+    margin: auto;
+}

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-display: swap;
+}
+
+  
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/bg.webp);
+    background-size: cover;  /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    object-fit: cover;
+    font-family: "Noto Sans";
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.226);
+    backdrop-filter: blur(10px);
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   flex-wrap: wrap;
+   
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 0 ;
+    gap: 20px;
+}
+ul li{
+    list-style-type: none;
+}
+.navbar a{
+    
+    text-decoration: none;
+    color: white;
+    
+}
+.navbar a:hover{
+color: black;
+font-weight: 600;
+}
+.title{
+    
+    display: flex;
+    flex-direction: column;
+}
+.title h1{
+    color: black;
+    margin-top: 10px;
+    
+    margin-bottom: 5px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    min-height: 86vh;
+    align-items: center;
+    min-width: auto;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 40px;
+    width: 60%;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.226);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+.image{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    border: 4px dotted black;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    
+
+    justify-content: center;
+align-items: center;
+    
+}
+img{
+    width: 190px;
+    height: 190px;
+    aspect-ratio: attr(width) / attr(height);
+    border: none;
+    border-radius: 100%;
+    background-position: center;
+    
+}
+
+.textprofile{
+    width: 390px;
+}
+.textprofile p{
+    font-size: 19px;
+}
+.projectsc{
+    width: 80%;
+}
+.imgpro{
+    height: 200px;
+    width: 200px;
+}
+.imgpro img{
+    border-radius: 0;
+}
+@media (max-width: 790px) {
+    body{
+        height: 150vh;
+    }
+    /* .navbar{
+        flex-direction: column;
+    } */
+    .navbar{justify-content: center;padding: 10px;}
+   .navbar h1{
+    margin: auto;
+   }
+    .card{width: 80%;}
+}
+
+.wiper{
+    transition: all 1s linear;
+    animation: wipeit-in-out 1s linear infinite;
+    overflow: hidden;
+    /* background-color: beige; */
+    width: 0;
+}
+.wiper h1{
+    text-wrap: nowrap;
+}
+@keyframes wipeit-in-out{
+   40%{
+    width: 200px;
+   }
+    100%{
+        width: 0;
+        
+    }
+}
